@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+co=0
+
+while [ $co -lt 10 ]
+do
+  echo "Holberton School"
+  (( co++ ))
+done
