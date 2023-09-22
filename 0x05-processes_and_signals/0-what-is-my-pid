@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# slef pid display
+echo $$
