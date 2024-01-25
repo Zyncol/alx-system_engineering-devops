@@ -4,6 +4,7 @@ Counti=0
 
 until [ $Counti -eq 10 ]
 do
-  echo "Holberton School"
+  echo "Best School"
   (( Counti++ ))
 done
+

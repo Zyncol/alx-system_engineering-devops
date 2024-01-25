@@ -4,6 +4,7 @@ hol=0
 
 while [ $hol -lt 10 ]
 do
-  echo "Holberton School"
+  echo "Best School"
   (( hol++ ))
 done
+
