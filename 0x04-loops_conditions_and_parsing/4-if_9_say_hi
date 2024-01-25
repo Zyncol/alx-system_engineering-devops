@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+counti=0
+
+while [ $counti -lt 10 ]
+do
+  if [ $counti -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Holberton School"
+  (( counti++ ))
+done

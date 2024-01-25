@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#this script displays Best School 10 times
+Counti=0
+
+until [ $Counti -eq 10 ]
+do
+  echo "Holberton School"
+  (( Counti++ ))
+done

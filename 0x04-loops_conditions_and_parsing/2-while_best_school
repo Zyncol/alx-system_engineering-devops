@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#this script uses while
+hol=0
+
+while [ $hol -lt 10 ]
+do
+  echo "Holberton School"
+  (( hol++ ))
+done
