@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #first using sigterm
+trap 'echo "I am invincible!!!"' SIGTERM
 while true
 do
     echo "To infinity and beyond"
     sleep 2
-    trap 'echo "I am invincible!!!"' SIGTERM
 done
