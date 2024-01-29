@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# it display contents in a directory
+for z in *
+do
+    echo "$z" | cut -d'-' -f2
+done

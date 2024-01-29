@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# The script displays numbers
+CO=1
+while [ $CO -lt 21 ]
+do
+    case $CO in
+        4)
+	    echo $CO
+	    echo "bad luck from China"
+	    ;;
+	9)
+	    echo $CO
+	    echo "bad luck from Japan"
+	    ;;
+	17)
+	    echo $CO
+	    echo "bad luck from Italy"
+	    ;;
+	*)
+	    echo $CO
+	    ;;
+    esac
+
+    ((CO+=1))
+done

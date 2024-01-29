@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# it display the time for hours and minutes
+hr=0
+while [ $hr -lt 13 ]
+do
+    echo "Hour: $hr"
+    phindi=1
+    while [ $phindi -lt 60 ]
+    do
+        echo $phindi
+	((phindi+=1))
+    done
+    ((hr+=1))
+done

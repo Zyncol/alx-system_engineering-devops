@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# tells a story of a password
+while IFS=':' read -r unname Passwrd Uid Gid info Home shell; do
+  echo "The user $unname is part of the $Gid gang,"\
+  "lives in $Home and rides $shell."\
+  "$Uid's place is protected by the passcode $Passwrd,"\
+  "more info about the user here: $info"
+done < "/etc/passwd"
