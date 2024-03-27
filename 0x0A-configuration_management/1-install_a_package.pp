@@ -1,6 +1,5 @@
-# installing flask by using puppet from pip3
-
- package { 'flask':
-   ensure   => '2.1.0',
-   provider => 'pip3',
- }
+# Kills a process
+exec { 'pkill':
+  command  => 'pkill killmenow',
+  provider => shell,
+}
