@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Command that make an nginx server listen on port 80 only
-apt-get -y update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-service nginx start
+# configuring a server to listening on port 80
+
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
