@@ -34,14 +34,14 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend clickviral-tech-frontend
+frontend zach-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend zach-tech-backend
 
-backend clickviral-tech-backend
+backend zach-tech-backend
     balance roundrobin
-    server 97653-web-01 54.236.44.42 check
-    server 97653-web-02 35.153.226.103 check
+    server 97653-web-01 54.236.44.42:80 check
+    server 97653-web-02 35.153.226.103:80 check
 "
 
 #shellcheck
